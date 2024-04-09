@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero{
+    background-color: #ffd700;
+    padding: 20px;
+}
+#nadekael{
+    color: white;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+ .nav-links {
+    list-style: none;
+    
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-links li a {
+    font-weight: 400;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links li a:hover{
+    color: rgb(108, 108, 162);
+}
+
+.header{
+    margin-top: 45px;
+    position: relative;
+    
+}
+.header-img{
+   position: absolute;
+   left: 750px;
+   top: 10px;
+
+}
+#header-heading{
+    margin-left: 20px;
+    margin-bottom: 35px;
+    color: white;
+    line-height: 1.6;
+    font-size: 50px;
+    font-stretch: extra-expanded;
+}
+#header-text{
+    margin-left: 20px;
+    line-height: 1.6;
+    color: white;
+     margin-bottom: 35px;
+}
+
+.read-more button{
+    margin-left: 20px;
+    color: white;
+    padding:15px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: black;
+    width: 200px;
+    
+    
+
+}
+
+.read-more button a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+.about-img{
+    height: auto;
+    position: relative;
+    padding-left: 40px;
+}
+
+.about-text{
+    text-align: center;
+    position: absolute;
+    left: 750px;
+    top: 200px;
+}
+
+.about-p{
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: large;
+}
+
+.about-header{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.about-read-more button{
+    background-color: rgba(20, 168, 84, 0.265);
+    padding:15px;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 200px;
+    border-color:  rgba(20, 168, 84, 0.265);;
+}
+
+
+
+
+.section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+.item1 p{
+    line-height: 1.6;
+    font-size: large;
+    margin-bottom: 50px;
+}
+.item1 h1{
+    margin-bottom: 2px;
+    margin-left: 20px;
+}
+
+.item2 img{
+    max-width: 100%;
+}
+
+.item1-btn button {
+    margin-left: 20px;
+    color: white;
+    padding:15px;
+    border-radius: 20px;
+    border-color: #ffd700;
+    font-size: 20px;
+    background-color: #ffd700;
+    width: 200px
+    
+}
+
+.contact{
+    display: flex;
+    margin-top: 100px;
+}
+.contact-img h1{
+    margin-left: 50px;
+    color: #ffd700;
+}
+.span{
+    margin-bottom: 10px;
+}
+
+/*footer css*/
+.footer{
+    background-color: black;
+    padding: 30px;
+
+}
+.footer-h1{
+    margin-left: 450px;
+    padding: 50px;
+    color: white;
+    font-size: 30px;
+    
+}
+.footer-items{
+    display: flex;
+    justify-content: space-between;
+    font-family: monospace;
+    padding: 25px;
+    color: white;
+}
+.footer-items h2{
+    margin-left: 29px;
+    margin-bottom: 20px;
+}
+
+button{
+     margin-left: 60px;
+     margin-top: 5px;
+     color: white;
+     background-color: yellow;
+     padding: 10px;
+     border-color: yellow;
+}
+#footer-input{
+    height: 30px;
+    width: 250px;
+    
+}

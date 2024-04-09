@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header img{
+    width: 400px;
+    margin-left: 32%;
+}
+.header h1{
+    margin-left: 27%;
+    margin-top: 10px;
+}

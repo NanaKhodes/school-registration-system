@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADMISSION</title>
+    <link rel="stylesheet" href="student.css" />
+  </head>
+  <body> 
+    <!---Header-->
+    <div class="header">
+        <img src="Nadekael Logo.jpg" alt="">
+        <h1>ADMISSION FORM</h1>
+    </div>
+    <div class="passport-img">
+      <div id="img-preview"></div>
+      <input type="file" id="choose-file" name="choose-file" accept="image/*" />
+      <label for="choose-file">Child's Passport</label>
+    </div>
+
+    <main>
+      <form id="studentForm">
+            <input type="text" placeholder="Student Name" name="name" required />
+            <input type="text" placeholder="Student Gender" name="gender" required/>
+            <input type="number" placeholder="Student Age" name="age" required />
+            <input type="text" placeholder="Student Grade" name="grade" id="school-fees" required/>
+            <input type="text" placeholder="Student Address" name="address" required/>
+            <input type="number" placeholder="Student Roll" name="roll" required />
+            <button>Add student</button>
+      </form>
+      <div class="students"></div>
+    </main>
+    <script src="student.js"></script>
+  </body>
+</html>

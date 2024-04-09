@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="admission.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body onload="document.registration.userid.focus()">
+    <div class="header">
+        <img src="Nadekael Logo.jpg" alt="">
+        <h1>ADMISSION FORM</h1>
+    </div>
+
+    <form name= 'registration' onsubmit="return formValidation();">
+            
+      <div id="img-preview"></div>
+      <input type="file" id="choose-file" name="choose-file" accept="image/*" />
+      <label for="choose-file">Child's Passport</label>
+            
+        <ul>    
+               <!---Fullname input-->
+               <li><label for="username">Child's Name:</label></li>
+               <li><input type="text" name="username" size="85"/></li> 
+                    
+              
+            
+                 <li><label for="gender">Sex:</label></li>
+                 <li><input type="radio" name="msex"  value="Male" /><span>Male</span></li>
+                 <li><input type="radio" name="fsex"  value="Female" /><span>Female</span></li>
+              
+
+                  <li><label for="grade">Grade:</label></li>
+                  <li><select name="grade">
+                  <option selected="" value="Default">(Please select a Grade)</option>
+                  <option value="AF">Grade1</option>
+                  <option value="AL">Grrade2</option>
+                  <option value="DZ">Grade3</option>
+                  <option value="AS">Grade4</option>
+                  <option value="AD">Grade5</option>
+                  </select></li>
+
+              
+    
+                    
+                  <li><label for="email">Email:</label></li>
+                   <li><input type="text" name="email" size="85" " /></li>
+                    
+                    
+                
+
+                
+                    <li><label for="address">Address:</label></li>
+                    <li><input type="text" name="address" size="85" /></li>
+
+                    <li><input type="submit" name="submit" value="Submit" id="submit"/></li>
+                
+                   
+         </ul>
+
+    </form>
+
+    
+
+
+
+  <script src="admission.js"></script>
+   
+</body>
+</html>

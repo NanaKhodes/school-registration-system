@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation - Easy Tutorials YouTube Channel</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="header">
+    <img src="Nadekael Logo.jpg" alt="">
+    <h1>ADMISSION FORM</h1>
+  </div>
+
+  <div class="container">
+    <form>
+      <div id="img-preview"></div>
+      <input type="file" id="choose-file" name="choose-file" accept="image/*" />
+      <label for="choose-file">Child's Passport</label>
+            
+      <div class="input-group">
+        <label for="contact-name">Full Name</label>
+        <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+        <span id="name-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label for="gender">Gender</label>
+        <input type="radio" name="" id="gender" onkeyup="validateGender()"/>Male
+        <input type="radio" name="" id="genderf"/>Female
+        <span id="gender-error"></span>
+      </div>
+
+      <div class="input-grou" id="gradeprice">
+        <label for="grades">Choose Grade:</label>
+        <span id="school-fees"></span>
+        <button type="button" onclick="GradeOne()">Grade 1</button>
+        <button type="button" onclick="GradeTwo()">Grade 2</button>
+        <button type="button" onclick="GradeThree()">Grade 3</button>
+        <button type="button" onclick="GradeFour()" >Grade 4</button>
+      </div>
+
+
+      <div class="input-group">
+        <label for="dob">DOB</label>
+        <input type="date" name="" id="dob" onkeyup="validateDob()">
+        <span id="dob-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label for="contact-phone">Phone No.</label>
+        <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
+        <span id="phone-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label for="contact-email">Email Id</label>
+        <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+        <span id="email-error"></span>
+      </div>
+      
+      <div class="input-group">
+        <label for="address" >Address</label>
+        <input type="text"  id="address" onkeyup="validateAddress()"/>
+        <span id="address-error"></span>
+      </div>
+
+     
+
+      <button onclick="return validateForm( )">Submit</button>
+       <span id="submit-error"></span>
+   
+    </form>
+
+
+      
+  </div>
+
+  <script src="form.js"></script>
+   
+</body>
+</html>
